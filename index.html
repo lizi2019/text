@@ -1,1 +1,42 @@
-huapengweiye
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+ 
+function shows()
+{
+    var f=document.getElementById("f");
+    f.style.display='block';   
+}   
+function closed()
+{
+    var f=document.getElementById("f");
+     
+    f.style.display='none';
+}   
+</script>
+<style type="text/css">
+#f{
+    width:300px;
+    height:200px;
+    background: #FF0;
+    display:none;
+    letf:500px;
+    font-size:30px;
+}
+#m{
+    width:200px;
+    height:40px;
+    background: #F00;
+    font-size:30px;
+}
+ 
+</style>
+</head>
+<body>
+<div id="m" onMouseOver="shows()" onMouseOut="closed()">测试一下</div>
+<div id="f">显示层</div>
+ 
+</body>
+</html>
